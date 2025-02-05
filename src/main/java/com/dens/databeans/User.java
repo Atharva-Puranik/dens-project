@@ -14,7 +14,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "user_prime_key")
-	private String userPrimeKey;
+	private Long userPrimeKey;
 	
 	@Column(name = "username")
 	private String userName;
@@ -25,11 +25,11 @@ public class User {
 	@Column(name = "otp_requested_time")
 	private String otp_requested_time;
 
-	public String getUserPrimeKey() {
+	public Long getUserPrimeKey() {
 		return userPrimeKey;
 	}
 
-	public void setUserPrimeKey(String userPrimeKey) {
+	public void setUserPrimeKey(Long userPrimeKey) {
 		this.userPrimeKey = userPrimeKey;
 	}
 
